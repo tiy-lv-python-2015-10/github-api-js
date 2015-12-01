@@ -1,0 +1,422 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <!--*************  META TAGS  ************-->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Github Remake</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!--*************  CSS  ************-->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!--*************  BOOTSTRAP  ************-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!--***************** NAVIGATION *******************-->
+
+        <!--***************** NAVIGATION *******************-->
+        <div id="header" class="container-fluid">
+            <div class="container-fluid nav_inner">
+                <i class="fa fa-github fa-3x"></i>
+                <input id="search-input" type="text" placeholder="Search Github" />
+                <ul id="nav">
+                  <li>
+                    <a href="#">Pull Requests</a>
+                  </li>
+                  <li>
+                    <a href="#">Issues</a>
+                  </li>
+                  <li>
+                    <a href="#">Gist</a>
+                  </li>
+                </ul>
+                <ul id="profile">
+                    <li>
+                        <i class="fa fa-bell"></i>
+
+                    </li>
+                    <li>
+                        <i class="fa fa-plus"></i>
+                        <i class="fa fa-caret-down"></i>
+                    </li>
+                    <li>
+                        <img height="20" src="img/profile_image.jpeg" width="20">
+                        <i class="fa fa-caret-down"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--***************** MAIN CONTENT *******************-->
+        <div class="container-fluid main_container">
+        <div class="row">
+
+
+        <!--***************** FIRST COLUMN *******************-->
+            <div class="col-xs-12 col-sm-3">
+                <div id="col1_section1">
+                    <img  id="profile_image">
+                    <h2 id="name">Matt Keas</h2>
+                    <h3>matthiasak</h3>
+                </div>
+                <hr class="hr_small">
+                <div id="col1_section2">
+                    <div>
+                    <i class="fa fa-map-marker inline"></i>
+                    <p class="inline" id="location">Houston, TX</p>
+                    </div>
+
+                    <div>
+                    <i class="fa fa-envelope-o inline"></i>
+                    <a href="mailto:%6d%61%74%74%68%69%61%73%61%6b@%67%6d%61%69%6c.%63%6f%6d" id="email"><p class="inline">matthiasak@gmail.com</p></a>
+                    </div>
+
+                    <div>
+                    <i class="fa fa-gg inline"></i>
+                    <a href="http://mkeas.org " id="blog"><p class="inline">http://mkeas.org</p></a>
+                    </div>
+
+                    <i class="fa fa-clock-o inline"></i>
+                    <p class="inline">Joined on Jul 7, 2011</p>
+                </div>
+                <hr class="hr_small">
+                <div id="col1_section3" class="row">
+                    <div class="col-xs-3">
+                        <p class="blue stats_num">69</p>
+                        <p class="stats_type">followers</p>
+                    </div>
+                    <div class="col-xs-3">
+                        <p class="blue stats_num">69</p>
+                        <p class="stats_type">starred</p>
+                    </div>
+                    <div class="col-xs-3">
+                        <p class="blue stats_num">4</p>
+                        <p class="stats_type">following</p>
+                    </div>
+                </div>
+                <hr class="hr_small">
+                <div id="col1_section4">
+                    <h3>Organizations</h3>
+                    <img alt="@theironyard" class="avatar" height="42" src="https://avatars3.githubusercontent.com/u/2248433?v=3&amp;s=84" width="42">
+                </div>
+            </div>
+        <!--***************** END FIRST COLUMN *******************-->
+
+
+        <!--***************** SECOND COLUMN *******************-->
+            <div class="col-xs-12 col-sm-9 second_column ">
+                <div class="row row1 tab"><!-- FIRST ROW -->
+                    <div class="col-xs-12 col-sm-2 ">
+                        <i class="fa fa-plus-square-o inline"></i>
+                        <p class="inline">Contributions</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 tab_repo">
+                        <i class="fa fa-server inline"></i>
+                        <p class="inline  ">Repositories</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 ">
+                        <i class="fa fa-rss inline"></i>
+                        <p class="inline">Public Acitivity</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <button type="button" class="btn btn-success inline"><i class="fa fa-male"></i>Follow</button>
+
+
+                        <button type="button" class="btn btn-default inline"><i class="fa fa-exclamation-circle"></i> <i class="fa fa-caret-down"></i></button>
+                </div><!-- END FIRST ROW -->
+
+
+                <div class="row"><!-- SECOND ROW -->
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="input-group">
+
+                            <input type="text" class="form-control" placeholder="Find a Repository...">
+                             <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Search</button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3">
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                        <ul class="sources">
+                            <strong><li>All</li></strong>
+                            <li class="blue">Sources</li>
+                            <li class="blue"> Forks</li>
+                            <li class="blue">Mirrors</li>
+                        </ul>
+                    </div>
+
+                </div><!-- END SECOND ROW -->
+                <hr>
+                <div class="row tab repos"><!-- THIRD ROW -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 blue">
+                            <h2 id="repo_title"></h2>
+                        </div>
+                         <div class="col-xs-12 col-sm-3">
+
+                        </div>
+                         <div class="col-xs-12 col-sm-3">
+                            <ul class="sources sources2">
+                                <li class="lightgrey">Javascript</li>
+
+
+                                <i class="fa fa-star inline lightgrey"></i>
+                                <li class="lightgrey inline">9</li>
+
+
+
+
+                                <i class="fa fa-code-fork inline lightgrey"></i>
+                                <li class="lightgrey inline"> 3</li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <p></p>
+                    <p class="lightgrey">Updated a day ago</p>
+                    <div class="row">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-5">
+                            <div class="bar bar1"></div>
+                            <div class="bar bar2"></div>
+                            <div class="bar bar3"></div>
+                            <div class="bar bar4"></div>
+                            <div class="bar bar5"></div>
+                            <div class="bar bar6"></div>
+                            <div class="bar bar7"></div>
+                            <div class="bar bar8"></div>
+                            <div class="bar bar9"></div>
+
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                </div>
+                 <!-- <div class="row tab">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 blue">
+                            <h2>universal-utils</h2>
+                        </div>
+                         <div class="col-xs-12 col-sm-3">
+
+                        </div>
+                         <div class="col-xs-12 col-sm-3">
+                            <ul class="sources sources2">
+                                <li class="lightgrey">Javascript</li>
+
+
+                                <i class="fa fa-star inline lightgrey"></i>
+                                <li class="lightgrey inline">9</li>
+
+
+
+
+                                <i class="fa fa-code-fork inline lightgrey"></i>
+                                <li class="lightgrey inline"> 3</li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <p>Small functional problem-solving, event, state-management, and caching utilities</p>
+                    <p class="lightgrey">Updated a day ago</p>
+                    <div class="row">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-5">
+                            <div class="bar bar1"></div>
+                            <div class="bar bar2"></div>
+                            <div class="bar bar3"></div>
+                            <div class="bar bar4"></div>
+                            <div class="bar bar5"></div>
+                            <div class="bar bar6"></div>
+                            <div class="bar bar7"></div>
+                            <div class="bar bar8"></div>
+                            <div class="bar bar9"></div>
+
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                </div>
+                 <div class="row tab"><!-- THIRD ROW -->
+                    <!-- <div class="row">
+                        <div class="col-xs-12 col-sm-6 blue">
+                            <h2>react-resolver</h2>
+                        </div>
+                         <div class="col-xs-12 col-sm-3">
+
+                        </div>
+                         <div class="col-xs-12 col-sm-3">
+                            <ul class="sources sources2">
+                                <li class="lightgrey">Javascript</li>
+
+
+                                <i class="fa fa-star inline lightgrey"></i>
+                                <li class="lightgrey inline">9</li>
+
+
+
+
+                                <i class="fa fa-code-fork inline lightgrey"></i>
+                                <li class="lightgrey inline"> 3</li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <p>Isomorphic library to recursively lazy-load data for React components</p>
+                    <p class="lightgrey">Updated a day ago</p>
+                    <div class="row">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-5">
+                            <div class="bar bar1"></div>
+                            <div class="bar bar2"></div>
+                            <div class="bar bar3"></div>
+                            <div class="bar bar4"></div>
+                            <div class="bar bar5"></div>
+                            <div class="bar bar6"></div>
+                            <div class="bar bar7"></div>
+                            <div class="bar bar8"></div>
+                            <div class="bar bar9"></div>
+
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                </div> <div class="row tab"><!-- THIRD ROW -->
+                    <!-- <div class="row">
+                        <div class="col-xs-12 col-sm-6 blue">
+                            <h2>babel</h2>
+                        </div>
+                         <div class="col-xs-12 col-sm-3">
+
+                        </div>
+                         <div class="col-xs-12 col-sm-3">
+                            <ul class="sources sources2">
+                                <li class="lightgrey">Javascript</li>
+
+
+                                <i class="fa fa-star inline lightgrey"></i>
+                                <li class="lightgrey inline">9</li>
+
+
+
+
+                                <i class="fa fa-code-fork inline lightgrey"></i>
+                                <li class="lightgrey inline"> 3</li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <p>Babel is a compiler for writing next generation JavaScript.</p>
+                    <p class="lightgrey">Updated a day ago</p>
+                    <div class="row">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-5">
+                            <div class="bar bar1"></div>
+                            <div class="bar bar2"></div>
+                            <div class="bar bar3"></div>
+                            <div class="bar bar4"></div>
+                            <div class="bar bar5"></div>
+                            <div class="bar bar6"></div>
+                            <div class="bar bar7"></div>
+                            <div class="bar bar8"></div>
+                            <div class="bar bar9"></div>
+
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>  -->
+                <!-- </div> <div class="row tab">
+                    <!-- <div class="row">
+                        <div class="col-xs-12 col-sm-6 blue">
+                            <h2>fullstack-london-oct-2015</h2>
+                        </div>
+                         <div class="col-xs-12 col-sm-3">
+
+                        </div>
+                         <div class="col-xs-12 col-sm-3">
+                            <ul class="sources sources2">
+                                <li class="lightgrey">Javascript</li>
+
+
+                                <i class="fa fa-star inline lightgrey"></i>
+                                <li class="lightgrey inline">9</li>
+
+
+
+
+                                <i class="fa fa-code-fork inline lightgrey"></i>
+                                <li class="lightgrey inline"> 3</li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <p>Physics Simulations from the Ground Up - my talk at FullStack London 2015 </p>
+                    <p class="lightgrey">Updated a day ago</p>
+                    <div class="row">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-5">
+                            <div class="bar bar1"></div>
+                            <div class="bar bar2"></div>
+                            <div class="bar bar3"></div>
+                            <div class="bar bar4"></div>
+                            <div class="bar bar5"></div>
+                            <div class="bar bar6"></div>
+                            <div class="bar bar7"></div>
+                            <div class="bar bar8"></div>
+                            <div class="bar bar9"></div>
+
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                </div> -->
+            </div>
+
+        <!--***************** END SECOND COLUMN *******************-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div><!--MAIN ROW CLOSE-->
+
+
+        <!--***************** MAIN CONTENT *******************-->
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+        <script src='main.js'></script>
+    </body>
+</html>
